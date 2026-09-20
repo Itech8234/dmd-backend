@@ -2,7 +2,7 @@
 // - VITE_API_BASE_URL: absolute API origin (production). Empty = same-origin
 //   (dev Vite proxy → http://localhost:8000).
 // - Auth: Django session cookie + CSRF token (no JWT, no second backend).
-const BASE = ('https://dmd-backend-dtxm.onrender.com' || '/api/v1').replace(/\/$/, '');
+const BASE = ('https://dmd-backend-dtxm.onrender.com' || '/api').replace(/\/$/, '');
 
 function getCookie(name) {
   const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
