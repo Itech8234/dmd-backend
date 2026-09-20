@@ -5,7 +5,7 @@ import path from 'node:path';
 // Django (port 8000) is the ONLY backend. In dev, /api, /media and /static
 // are proxied to it; in production serve the built client from the same
 // origin (or set VITE_API_BASE_URL to the Django API origin).
-const DJANGO_DEV = process.env.DJANGO_DEV_URL || 'http://localhost:8000';
+const DJANGO_DEV = process.env.DJANGO_DEV_URL || 'https://dmd-backend-dtxm.onrender.com';
 
 export default defineConfig({
   // Relative asset paths so the built dist/index.html works when opened
